@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Button, Row} from 'reactstrap'
 import { NavLink, Link } from 'react-router-dom';
+import './header.css';
 
 import logo from '../../assets/images/logo.png';
 
@@ -45,6 +46,15 @@ const Header = () => {
               </ul>
             </div>
             {/* ===========menu end=========== */}
+            <div className="nav_right d-flex align-item-center gap-4"> 
+            <div className="nav_btns d-flex align-item-center gap-4">
+              <Button className="btn secondary_btn"><Link to='/login'>Login</Link></Button>
+              <Button className="btn primary_btn"><Link to='/register'>Register</Link></Button>
+            </div>
+            <span className="mobile_menu">
+              <i class="ri-menu-line"></i>
+            </span>
+            </div>
           </div>
         </Row>
       </Container>
